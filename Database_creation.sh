@@ -10,13 +10,12 @@ insert into sys_param(tag, type, value, feature_name) VALUES
 ('email_port', 1, '587', 'EmailProcess'), 
 ('email_username', 1, 'support@goldilocks-tech.com', 'EmailProcess'), 
 ('email_password', 1, 'P@ss1MustChange', 'EmailProcess'), 
-('email_tps', 1, '5', 'EmailProcess'), 
+('email_tps', 1, '5000', 'EmailProcess'), 
 ('email_sleep_timer', 1, '20', 'EmailProcess'), 
-('email_retry_gap', 1, '1', 'EmailProcess'), 
+('email_retry_gap', 1, '5000', 'EmailProcess'), 
 ('email_max_retry_count', 1, '3', 'EmailProcess'), 
 ('email_sleep_time', 1, '30', 'EmailProcess'), 
-('email_from', 1, 'Info<support@goldilocks-tech.com>', 'EmailProcess'), 
-('email_batch', 1, '1', 'EmailProcess'), 
+('email_from', 1, 'Info<support@goldilocks-tech.com>', 'EmailProcess'),  
 ('systemDefaultLanguage', 1, 'en', 'General'); 
 
 INSERT INTO eirs_response_param (tag, value, feature_name, language) VALUES ('mail_signature', 'Regards,\nEIRS Team.\nPlease do not reply on this mail', 'EmailProcess', 'en'); 
