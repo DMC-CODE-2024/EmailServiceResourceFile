@@ -18,11 +18,11 @@ insert ignore into sys_param(tag, type, value, feature_name , DESCRIPTION,TYPE,A
 ('email_from', 1, 'Info<support@goldilocks-tech.com>', 'EmailProcess','email from sender ',0,1,'','',''),  
 ('systemDefaultLanguage', 1, 'en', 'General' ,'default system language',0,1,'','',''); 
 
-INSERT INTO eirs_response_param (tag, value, feature_name, language) VALUES ('mail_signature', 'Regards,\nEIRS Team.\nPlease do not reply on this mail', 'EmailProcess', 'en'); 
+INSERT ignore INTO eirs_response_param (tag, value, feature_name, language) VALUES ('mail_signature', 'Regards,\nEIRS Team.\nPlease do not reply on this mail', 'EmailProcess', 'en'); 
 
-INSERT INTO eirs_response_param (tag, value, feature_name, language) VALUES ('mail_signature', 'សូមគោរព\nក្រុម EIRS ។\nសូមកុំឆ្លើយតបតាមអ៊ីមែលនេះ។', 'EmailProcess', 'km');
+INSERT ignore INTO eirs_response_param (tag, value, feature_name, language) VALUES ('mail_signature', 'សូមគោរព\nក្រុម EIRS ។\nសូមកុំឆ្លើយតបតាមអ៊ីមែលនេះ។', 'EmailProcess', 'km');
 
-insert into cfg_feature_alert (alert_id ,description,feature) values 
+insert  ignore into cfg_feature_alert (alert_id ,description,feature) values 
 ('alert1601','Email Notification Module <Key> is missing in database configuration','Email Service'),
 ('alert1602','Email Notification Module - Error occurred while send email for - <emailId>','Email Service'),
 ('alert1603','Email Notification Module not able to connect with database','Email Service'),
