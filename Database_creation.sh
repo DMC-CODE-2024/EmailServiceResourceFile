@@ -5,7 +5,7 @@ dbDecryptPassword=$(java -jar  ${APP_HOME}/encryption_utility/PasswordDecryptor-
 
 mysql  -h$dbIp -P$dbPort -u$dbUsername -p${dbDecryptPassword} $appdbName <<EOFMYSQL
 
-insert into sys_param(tag, type, value, feature_name , DESCRIPTION,TYPE,ACTIVE,remark,user_type,modified_by ) VALUES 
+insert ignore into sys_param(tag, type, value, feature_name , DESCRIPTION,TYPE,ACTIVE,remark,user_type,modified_by ) VALUES 
 ('email_host', 1, 'smtp.office365.com', 'EmailProcess' ,'host name of email server',0,1,'','',''), 
 ('email_port', 1, '587', 'EmailProcess','port  of email server',0,1,'','',''), 
 ('email_username', 1, 'support@goldilocks-tech.com', 'EmailProcess','username   of email server',0,1,'','',''), 
