@@ -23,10 +23,10 @@ INSERT ignore INTO eirs_response_param (tag, value, feature_name, language) VALU
 INSERT ignore INTO eirs_response_param (tag, value, feature_name, language) VALUES ('mail_signature', 'សូមគោរព\nក្រុម EIRS ។\nសូមកុំឆ្លើយតបតាមអ៊ីមែលនេះ។', 'EmailProcess', 'km');
 
 insert  ignore into cfg_feature_alert (alert_id ,description,feature) values 
-('alert1601','Email Notification Module <Key> is missing in database configuration','Email Service'),
-('alert1602','Email Notification Module - Error occurred while send email for - <emailId>','Email Service'),
-('alert1603','Email Notification Module not able to connect with database','Email Service'),
-('alert1604','Email Notification Module performance impacted. Not able to meet configured TPS','Email Service');
+('alert1601','Email Notification Module <Key> is missing in database configuration','EmailProcess'),
+('alert1602','Email Notification Module - Error occurred while send email for - <emailId>','EmailProcess'),
+('alert1603','Email Notification Module not able to connect with database','EmailProcess'),
+('alert1604','Email Notification Module performance impacted. Not able to meet configured TPS','EmailProcess');
 
 EOFMYSQL
 
