@@ -1,7 +1,7 @@
 source ~/.bash_profile
 
 source $commonConfigurationFilePath
-dbDecryptPassword=$(java -jar  ${pass_dypt} spring.datasource.password)
+dbDecryptPassword=$(java -jar  ${pass_dypt} dbEncyptPassword)
 
 mysql  -h$dbIp -P$dbPort -u$dbUsername -p${dbDecryptPassword} $appdbName <<EOFMYSQL
 
