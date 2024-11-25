@@ -1,6 +1,6 @@
 source ~/.bash_profile
 
-source $commonConfigurationFilePath
+source $commonConfigurationFile
 dbDecryptPassword=$(java -jar  ${pass_dypt} dbEncyptPassword)
 
 mysql  -h$dbIp -P$dbPort -u$dbUsername -p${dbDecryptPassword} $appdbName <<EOFMYSQL
